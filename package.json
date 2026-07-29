@@ -1,0 +1,32 @@
+{
+  "name": "toolify-3d-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "seed:products": "node scripts/seedProducts.js",
+    "seed:materials": "node scripts/seedMaterials.js",
+    "migrate:tiers-to-two": "node scripts/migrateTiersToTwo.js",
+    "migrate:order-statuses": "node scripts/migrateOrderStatuses.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase-admin": "^14.1.0",
+    "express-rate-limit": "^7.5.0",
+    "firebase-admin": "^14.1.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^7.4.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.10.0",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
