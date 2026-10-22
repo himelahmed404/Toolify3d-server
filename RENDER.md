@@ -1,9 +1,20 @@
 # Deploy API on Render
 
-## Create the service
+## Live service
+
+| Field | Value |
+|-------|-------|
+| Name | `toolify3d-api` |
+| URL | https://toolify3d-api.onrender.com |
+| Health | `GET /health` → `{"status":"ok"}` |
+| Dashboard | https://dashboard.render.com/web/srv-dbcp63rncjis73d6hfv0 |
+| Repo | https://github.com/himelahmed404/Toolify3d-server |
+| Plan | free (spins down when idle; upgrade for always-on / Socket.IO) |
+
+## Create the service (if recreating)
 
 1. Go to [Render Dashboard](https://dashboard.render.com) → **New** → **Web Service**.
-2. Connect GitHub repo `0xW1zard/Toolify3d-server`.
+2. Connect GitHub repo `himelahmed404/Toolify3d-server`.
 3. Settings:
    - **Runtime:** Node
    - **Build command:** `npm install`
